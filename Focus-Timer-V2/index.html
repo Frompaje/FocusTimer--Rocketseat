@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo Pomodoro">
+    <title>FocusTimer | Pomodoro</title>
+    <!-- bibliotecas de icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="svg/favicon.png" type="image/x-svg">
+</head>
+
+<body>
+    <main>
+        <section class="container-tema">
+            <button id="toggle-mode">
+                <span class="sr-only">Ativar light mode!</span>
+                <i class="ph-bold ph-sun"></i>
+                <i class="ph-bold ph-moon"></i>
+
+            </button>
+
+        </section>
+
+        <section class="container-time flex">
+            <span class="minutes">00</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+        </section>
+
+        <section class="container-controls flex">
+            <button data-action="toggleRunning" class="ph ph-play-circle">
+                <span class="sr-only">Iniciar contadorz</span>
+            </button>
+
+            <button data-action="toggleRunning" class="ph ph-pause-circle">
+                <span class="sr-only">Pausar contador</span>
+            </button>
+
+            <button data-action="set" class="ph ph-timer secondary">
+                <span class="sr-only">Ajustar contador</span>
+            </button>
+
+            <button data-action="reset" class="ph ph-stop-circle secondary">
+                <span class="sr-only">Reiniciar contador</span>
+            </button>
+
+            <button data-action="toggleMusic" class="ph ph-speaker-none secondary">
+                <span class="sr-only">Iniciar música</span>
+            </button>
+
+            <button data-action="toggleMusic" class="ph ph-speaker-high">
+                <span class="sr-only">Parar música</span>
+            </button>
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
